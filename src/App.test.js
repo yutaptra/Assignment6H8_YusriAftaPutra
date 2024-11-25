@@ -21,6 +21,6 @@ test('renders search input and allows typing', () => {
     </Provider>
   );
   const inputElement = screen.getByPlaceholderText(/Search for movies/i);
-  fireEvent.change(inputElement, { target: { value: 'Batman' } });
-  expect(inputElement.value).toBe('Batman');
+  fireEvent.change(inputElement, { target: { value: 'spider-man' } });
+  expect(inputElement.value).toBe('spider-man');
 });
