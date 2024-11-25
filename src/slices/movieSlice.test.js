@@ -28,7 +28,7 @@ describe('movieSlice reducer', () => {
   });
 
   it('should handle setQuery', () => {
-    const query = 'Batman';
+    const query = 'spider-man';
     expect(movieReducer(initialState, setQuery(query))).toEqual({
       ...initialState,
       query,
