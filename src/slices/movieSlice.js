@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   movies: [],
   error: null,
-  query: 'spider-man',
+  query: 'Spider-Man',
 };
 
 const movieSlice = createSlice({

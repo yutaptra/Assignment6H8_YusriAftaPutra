@@ -4,7 +4,7 @@ describe('movieSlice reducer', () => {
   const initialState = {
     movies: [],
     error: null,
-    query: 'spider-man',
+    query: 'Spider-Man',
   };
 
   it('should return the initial state', () => {
@@ -12,7 +12,7 @@ describe('movieSlice reducer', () => {
   });
 
   it('should handle setMovies', () => {
-    const movies = [{ title: 'Movie 1' }, { title: 'Movie 2' }];
+    const movies = [{ title: 'Spider-Man' }];
     expect(movieReducer(initialState, setMovies(movies))).toEqual({
       ...initialState,
       movies,
@@ -28,7 +28,7 @@ describe('movieSlice reducer', () => {
   });
 
   it('should handle setQuery', () => {
-    const query = 'spider-man';
+    const query = 'Spider-Man';
     expect(movieReducer(initialState, setQuery(query))).toEqual({
       ...initialState,
       query,

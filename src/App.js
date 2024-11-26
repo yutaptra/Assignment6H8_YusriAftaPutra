@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <div className="container mt-4">
-      <Header title="Movie App" setQuery={(q) => dispatch(setQuery(q))} />
+      <Header title="KACALAYAR12" setQuery={(q) => dispatch(setQuery(q))} />
       <div className="row">
         {error ? (
           <p>{error}</p>
